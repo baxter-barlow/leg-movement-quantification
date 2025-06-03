@@ -12,6 +12,4 @@ authors     = [{name = "Baxter Barlow", email = "barlow@mit.edu"}]
 requires-python = ">=3.9"
 
 dependencies = [
-  "numpy >=1.26",
-  "opencv-python >=4.10",
 ]
