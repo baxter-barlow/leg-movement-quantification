@@ -1,0 +1,14 @@
+dataset: /content/drive/MyDrive/legmovement-baxter-2025-06-02
+dataset_type: multi-animal-imgaug
+num_joints: 3
+all_joints:
+- - 0
+- - 1
+- - 2
+all_joints_names:
+- toe
+- ankle
+- knee
+net_type: dekr_w48
+global_scale: 1
+scoremap_dir: test
