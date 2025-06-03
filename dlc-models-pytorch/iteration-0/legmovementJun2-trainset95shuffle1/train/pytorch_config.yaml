@@ -1,0 +1,128 @@
+data:
+  bbox_margin: 20
+  colormode: RGB
+  inference:
+    normalize_images: true
+    auto_padding:
+      pad_width_divisor: 32
+      pad_height_divisor: 32
+  train:
+    affine:
+      p: 0.5
+      rotation: 30
+      scaling:
+      - 0.5
+      - 1.25
+      translation: 0
+    crop_sampling:
+      width: 448
+      height: 448
+      max_shift: 0.1
+      method: hybrid
+    gaussian_noise: 12.75
+    motion_blur: true
+    normalize_images: true
+device: auto
+metadata:
+  project_path: /content/drive/MyDrive/legmovement-baxter-2025-06-02
+  pose_config_path: 
+    /content/drive/MyDrive/legmovement-baxter-2025-06-02/dlc-models-pytorch/iteration-0/legmovementJun2-trainset95shuffle1/train/pytorch_config.yaml
+  bodyparts:
+  - toe
+  - ankle
+  - knee
+
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+  unique_bodyparts: []
+  individuals:
+  - animal
+  with_identity:
+method: bu
+model:
+  backbone:
+    type: HRNet
+    model_name: hrnet_w48
+    freeze_bn_stats: false
+    freeze_bn_weights: false
+    interpolate_branches: true
+    increased_channel_count: false
+  backbone_output_channels: 720
+  heads:
+    bodypart:
+      type: DEKRHead
+      weight_init: dekr
+      target_generator:
+        type: DEKRGenerator
+        num_joints: 3
+        pos_dist_thresh: 17
+        bg_weight: 0.1
+      criterion:
+        heatmap:
+          type: DEKRHeatmapLoss
+          weight: 1
+        offset:
+          type: DEKROffsetLoss
+          weight: 0.03
+      predictor:
+        type: DEKRPredictor
+        apply_sigmoid: false
+        use_heatmap: false
+        clip_scores: true
+        num_animals: 1
+        keypoint_score_type: combined
+        max_absorb_distance: 75
+        nms_threshold: 0.05
+        apply_pose_nms: true
+      heatmap_config:
+        channels:
+        - 720
+        - 48
+        - 4
+        num_blocks: 1
+        dilation_rate: 1
+        final_conv_kernel: 1
+      offset_config:
+        channels:
+        - 720
+        - 45
+        - 3
+        num_offset_per_kpt: 15
+        num_blocks: 2
+        dilation_rate: 1
+        final_conv_kernel: 1
+net_type: dekr_w48
+runner:
+  type: PoseTrainingRunner
+  gpus:
+  key_metric: test.mAP
+  key_metric_asc: true
+  eval_interval: 10
+  optimizer:
+    type: AdamW
+    params:
+      lr: 0.0005
+  scheduler:
+    type: LRListScheduler
+    params:
+      lr_list:
+      - - 0.0001
+      - - 1e-05
+      milestones:
+      - 90
+      - 120
+  snapshots:
+    max_snapshots: 5
+    save_epochs: 25
+    save_optimizer_state: false
+train_settings:
+  batch_size: 8
+  dataloader_workers: 0
+  dataloader_pin_memory: false
+  display_iters: 500
+  epochs: 200
+  seed: 42
+with_center_keypoints: true
