@@ -1,4 +1,4 @@
-dataset: /content/drive/MyDrive/legmovement-baxter-2025-06-02
+dataset: /content/leg-movement-quantification
 dataset_type: multi-animal-imgaug
 num_joints: 3
 all_joints:
