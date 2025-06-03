@@ -7,7 +7,7 @@ identity:
 
 
 # Project path (change when moving around)
-project_path: /content/drive/MyDrive/legmovement-baxter-2025-06-02
+project_path: /content/leg-movement-quantification
 
 
 # Default DeepLabCut engine to use for shuffle creation (either pytorch or tensorflow)
