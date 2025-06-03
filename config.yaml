@@ -1,0 +1,778 @@
+# Project definitions (do not edit)
+Task: legmovement
+scorer: baxter
+date: Jun2
+multianimalproject: false
+identity:
+
+
+# Project path (change when moving around)
+project_path: /content/drive/MyDrive/legmovement-baxter-2025-06-02
+
+
+# Default DeepLabCut engine to use for shuffle creation (either pytorch or tensorflow)
+engine: pytorch
+
+
+# Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  /Users/baxterbarlow/leg_movement/sampled_clips/D80_8weeks__stim_block_008.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D91_12weeks__stim_block_002.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H96_8weeks__stim_block_016.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_16weeks__stim_block_017.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D78_10weeks__stim_block_002.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D91_6weeks__stim_block_010.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D77_12weeks__stim_block_019.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_6weeks__stim_block_046.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C68_18weeks__stim_block_009.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_14weeks__stim_block_047.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D77_10weeks__stim_block_006.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D93_4weeks__stim_block_013.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C67_8weeks__stim_block_003.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_22weeks__stim_block_011.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D77_8weeks__stim_block_021.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D80_6weeks__stim_block_014.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D92_14weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C68_10weeks__stim_block_023.mp4:
+    crop: 0, 3840, 0, 2160
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_20weeks__stim_block_026.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D91_6weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D93_8weeks__stim_block_010.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D91_10weeks__stim_block_020.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D79_8weeks__stim_block_001.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_14weeks__stim_block_021.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H98_12weeks__stim_block_010.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D77_14weeks__stim_block_006.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D80_8weeks__stim_block_021.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C65_8weeks__stim_block_037.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C65_8weeks__stim_block_023.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D91_4weeks__stim_block_024.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D77_14weeks__stim_block_004.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H100_6weeks__stim_block_009.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D92_12weeks__stim_block_019.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D79_6weeks__stim_block_022.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D93_6weeks__stim_block_027.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_4weeks__stim_block_000.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_10weeks__stim_block_022.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_20weeks__stim_block_029.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_20weeks__stim_block_001.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_20weeks__stim_block_002.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C69_10weeks__stim_block_040.mp4:
+    crop: 0, 3840, 0, 2160
+  /Users/baxterbarlow/leg_movement/sampled_clips/C69_22weeks__stim_block_019.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D93_8weeks__stim_block_013.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H96_8weeks__stim_block_028.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_16weeks__stim_block_015.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H100_6weeks__stim_block_020.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D77_14weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D78_6weeks__stim_block_046.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_24weeks__stim_block_000.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_4weeks__stim_block_021.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D77_6weeks__stim_block_013.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C68_16weeks__stim_block_012.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/I87_4weeks__stim_block_031.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C67_6weeks__stim_block_031.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D91_12weeks__stim_block_010.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H98_12weeks__stim_block_017.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C67_6weeks__stim_block_019.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C67_4weeks__stim_block_012.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D78_14weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_20weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C68_18weeks__stim_block_032.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D93_6weeks__stim_block_023.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C67_4weeks__stim_block_007.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D93_8weeks__stim_block_002.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C68_16weeks__stim_block_007.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_10weeks__stim_block_043.mp4:
+    crop: 0, 3840, 0, 2160
+  /Users/baxterbarlow/leg_movement/sampled_clips/D77_6weeks__stim_block_010.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D77_16weeks__stim_block_009.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D78_10weeks__stim_block_013.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_20weeks__stim_block_011.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D93_6weeks__stim_block_009.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D92_14weeks__stim_block_029.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D77_10weeks__stim_block_003.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D77_10weeks__stim_block_002.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C67_8weeks__stim_block_012.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D80_6weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C65_6weeks__stim_block_007.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_12weeks__stim_block_006.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D80_8weeks__stim_block_018.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D78_12weeks__stim_block_019.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_24weeks__stim_block_006.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C68_16weeks__stim_block_004.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_10weeks__stim_block_042.mp4:
+    crop: 0, 3840, 0, 2160
+  /Users/baxterbarlow/leg_movement/sampled_clips/C65_8weeks__stim_block_026.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H97_6weeks__stim_block_019.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D79_12weeks__stim_block_022.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H99_8weeks__stim_block_018.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_8weeks__stim_block_004.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_8weeks__stim_block_038.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H99_10weeks__stim_block_019.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_12weeks__stim_block_009.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_6weeks__stim_block_012.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_6weeks__stim_block_006.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D92_8weeks__stim_block_017.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D92_8weeks__stim_block_003.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D78_8weeks__stim_block_006.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C69_18weeks__stim_block_022.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_16weeks__stim_block_004.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_16weeks__stim_block_011.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D80_14weeks__stim_block_004.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/I95_4weeks__stim_block_015.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D76_10weeks__stim_block_004.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_24weeks__stim_block_010.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/I62_4weeks__stim_block_015.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/I87_4weeks__stim_block_041.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D76_14weeks__stim_block_013.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_10weeks__stim_block_001.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H99_12weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C65_12weeks__stim_block_009.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_12weeks__stim_block_012.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_18weeks__stim_block_026.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H97_4weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_12weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H99_10weeks__stim_block_026.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_14weeks__stim_block_030.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C69_10weeks__stim_block_036.mp4:
+    crop: 0, 3840, 0, 2160
+  /Users/baxterbarlow/leg_movement/sampled_clips/H96_12weeks__stim_block_015.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H100_10weeks__stim_block_006.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H97_8weeks__stim_block_013.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D79_16weeks__stim_block_008.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C69_18weeks__stim_block_009.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D93_14weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D76_10weeks__stim_block_007.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H97_8weeks__stim_block_012.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_14weeks__stim_block_026.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H100_10weeks__stim_block_007.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_24weeks__stim_block_007.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_6weeks__stim_block_010.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H99_6weeks__stim_block_013.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D80_12weeks__stim_block_025.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D79_10weeks__stim_block_003.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_18weeks__stim_block_033.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D93_10weeks__stim_block_004.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C69_16weeks__stim_block_001.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/I88_4weeks__stim_block_013.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D76_14weeks__stim_block_002.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D93_10weeks__stim_block_028.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D80_10weeks__stim_block_016.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_10weeks__stim_block_034.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D76_16weeks__stim_block_009.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H97_4weeks__stim_block_000.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_12weeks__stim_block_000.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H99_6weeks__stim_block_003.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H100_12weeks__stim_block_008.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H99_14weeks__stim_block_022.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_4weeks__stim_block_000.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D93_14weeks__stim_block_001.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_4weeks__stim_block_001.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_14weeks__stim_block_023.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H99_14weeks__stim_block_023.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H100_12weeks__stim_block_009.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C68_4weeks__stim_block_021.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H99_12weeks__stim_block_015.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D76_14weeks__stim_block_001.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/I62_4weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C67_6weeks__stim_block_051.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H96_14weeks__stim_block_025.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C69_16weeks__stim_block_006.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D93_12weeks__stim_block_020.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D79_10weeks__stim_block_004.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C68_22weeks__stim_block_009.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_22weeks_REPRESENTATIVE__stim_block_030.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_12weeks__stim_block_003.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H97_4weeks__stim_block_017.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_12weeks__stim_block_024.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H96_12weeks__stim_block_013.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D90_4weeks__stim_block_018.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H99_6weeks__stim_block_000.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D80_14weeks__stim_block_000.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D93_14weeks__stim_block_017.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D80_14weeks__stim_block_015.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D78_8weeks__stim_block_016.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_4weeks__stim_block_002.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_24weeks__stim_block_015.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C65_14weeks__stim_block_010.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_18weeks__stim_block_036.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C65_10weeks__stim_block_005.mp4:
+    crop: 0, 3840, 0, 2160
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_12weeks__stim_block_029.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_10weeks__stim_block_038.mp4:
+    crop: 0, 3840, 0, 2160
+  /Users/baxterbarlow/leg_movement/sampled_clips/I62_4weeks__stim_block_009.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C69_14weeks__stim_block_015.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_20weeks__stim_block_019.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H99_10weeks__stim_block_010.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/I95_4weeks__stim_block_009.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D76_10weeks__stim_block_024.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_4weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H97_8weeks__stim_block_018.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H100_12weeks__stim_block_006.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_8weeks__stim_block_018.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_20weeks__stim_block_018.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_12weeks__stim_block_015.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D76_8weeks__stim_block_012.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C65_10weeks__stim_block_021.mp4:
+    crop: 0, 3840, 0, 2160
+  /Users/baxterbarlow/leg_movement/sampled_clips/H99_8weeks__stim_block_010.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C69_14weeks__stim_block_028.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C68_4weeks__stim_block_006.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C65_12weeks__stim_block_002.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D80_10weeks__stim_block_018.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D79_12weeks__stim_block_002.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H96_14weeks__stim_block_000.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H96_14weeks__stim_block_014.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H97_6weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D78_6weeks__stim_block_007.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_22weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D78_6weeks__stim_block_039.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D80_12weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_18weeks__stim_block_010.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D76_16weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C65_14weeks__stim_block_022.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C69_10weeks__stim_block_017.mp4:
+    crop: 0, 3840, 0, 2160
+  /Users/baxterbarlow/leg_movement/sampled_clips/D78_8weeks__stim_block_018.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D92_8weeks__stim_block_009.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C69_18weeks__stim_block_000.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H96_10weeks__stim_block_016.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D79_16weeks__stim_block_014.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_6weeks__stim_block_012.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_14weeks__stim_block_038.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D90_4weeks__stim_block_002.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H96_12weeks__stim_block_009.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D76_6weeks__stim_block_030.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_22weeks_REPRESENTATIVE__stim_block_016.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H99_12weeks__stim_block_019.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/I88_4weeks__stim_block_026.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C68_4weeks__stim_block_029.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C69_14weeks__stim_block_013.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C68_22weeks__stim_block_017.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D90_4weeks__stim_block_006.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_14weeks__stim_block_014.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D76_6weeks__stim_block_034.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_6weeks__stim_block_002.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H99_14weeks__stim_block_003.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_16weeks__stim_block_023.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_4weeks__stim_block_002.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H96_10weeks__stim_block_007.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/I95_4weeks__stim_block_026.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H99_8weeks__stim_block_002.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D93_12weeks__stim_block_003.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D93_12weeks__stim_block_017.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_12weeks__stim_block_023.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_10weeks__stim_block_024.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/I88_4weeks__stim_block_009.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_22weeks__stim_block_017.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D80_10weeks__stim_block_008.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C65_12weeks__stim_block_006.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D79_12weeks__stim_block_012.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C69_16weeks__stim_block_027.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D79_10weeks__stim_block_031.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D80_12weeks__stim_block_003.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D76_8weeks__stim_block_016.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_20weeks__stim_block_020.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D76_6weeks__stim_block_037.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_4weeks__stim_block_015.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D79_16weeks__stim_block_007.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H96_10weeks__stim_block_004.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H100_10weeks__stim_block_008.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C65_14weeks__stim_block_025.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_18weeks__stim_block_017.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D76_16weeks__stim_block_002.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_22weeks_REPRESENTATIVE__stim_block_010.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_10weeks__stim_block_017.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D76_8weeks__stim_block_017.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C68_22weeks__stim_block_015.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_18weeks__stim_block_028.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_22weeks__stim_block_016.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_10weeks__stim_block_027.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H97_6weeks__stim_block_014.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D91_12weeks__stim_block_023.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C67_4weeks__stim_block_021.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D91_10weeks__stim_block_000.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_24weeks__stim_block_013.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_10weeks__stim_block_058.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D91_14weeks__stim_block_015.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D77_12weeks__stim_block_004.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C68_10weeks__stim_block_003.mp4:
+    crop: 0, 3840, 0, 2160
+  /Users/baxterbarlow/leg_movement/sampled_clips/C69_4weeks__stim_block_029.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D78_16weeks__stim_block_015.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H98_8weeks__stim_block_003.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D78_16weeks__stim_block_001.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D93_4weeks__stim_block_032.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_22weeks__stim_block_030.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D78_16weeks__stim_block_014.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D79_6weeks__stim_block_029.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D77_12weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_20weeks__stim_block_013.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H96_6weeks__stim_block_003.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D91_14weeks__stim_block_000.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_12weeks__stim_block_022.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D79_8weeks__stim_block_008.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_24weeks__stim_block_006.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D78_12weeks__stim_block_001.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D92_10weeks__stim_block_025.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D91_4weeks__stim_block_013.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D91_4weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_4weeks__stim_block_001.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H98_12weeks__stim_block_027.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H100_6weeks__stim_block_000.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C65_10weeks__stim_block_040.mp4:
+    crop: 0, 3840, 0, 2160
+  /Users/baxterbarlow/leg_movement/sampled_clips/D77_16weeks__stim_block_006.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_12weeks__stim_block_020.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D79_6weeks__stim_block_003.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D91_8weeks__stim_block_007.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D91_8weeks__stim_block_013.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D93_4weeks__stim_block_025.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D77_8weeks__stim_block_017.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H98_8weeks__stim_block_001.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_4weeks__stim_block_008.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D78_10weeks__stim_block_009.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_16weeks__stim_block_008.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D79_8weeks__stim_block_023.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D92_10weeks__stim_block_032.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/I87_4weeks__stim_block_038.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H96_8weeks__stim_block_019.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D91_6weeks__stim_block_037.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D92_12weeks__stim_block_015.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D91_14weeks__stim_block_013.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D91_8weeks__stim_block_002.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C68_10weeks__stim_block_005.mp4:
+    crop: 0, 3840, 0, 2160
+  /Users/baxterbarlow/leg_movement/sampled_clips/D78_14weeks__stim_block_024.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C67_8weeks__stim_block_019.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D77_8weeks__stim_block_006.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C68_18weeks__stim_block_013.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C65_6weeks__stim_block_031.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D78_14weeks__stim_block_019.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H96_6weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_20weeks__stim_block_001.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D92_12weeks__stim_block_000.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C69_22weeks__stim_block_001.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D93_10weeks__stim_block_043.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_24weeks__stim_block_018.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D78_12weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D77_6weeks__stim_block_031.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D92_10weeks__stim_block_009.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_14weeks__stim_block_004.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_24weeks__stim_block_002.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D56_4weeks__stim_block_033.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H98_8weeks__stim_block_012.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C65_6weeks__stim_block_027.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C69_4weeks__stim_block_010.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_10weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D55_22weeks__stim_block_009.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_10weeks__stim_block_010.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D80_6weeks__stim_block_018.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C69_4weeks__stim_block_011.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D92_14weeks__stim_block_021.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/H96_6weeks__stim_block_006.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C66_20weeks__stim_block_025.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/C69_22weeks__stim_block_016.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D91_10weeks__stim_block_010.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D77_16weeks__stim_block_001.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_14weeks__stim_block_005.mp4:
+    crop: 0, 1920, 0, 1080
+  /Users/baxterbarlow/leg_movement/sampled_clips/D58_4weeks__stim_block_012.mp4:
+    crop: 0, 1920, 0, 1080
+bodyparts:
+- toe
+- ankle
+- knee
+
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 1
+numframes2pick: 20
+
+
+# Plotting configuration
+skeleton:
+- - toe
+  - ankle
+- - ankle
+  - knee
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 12
+alphavalue: 0.7
+colormap: rainbow
+
+
+# Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+detector_snapshotindex: -1
+batch_size: 8
+detector_batch_size: 1
+
+
+# Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+#if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+
+# Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
+
+
+# Conversion tables to fine-tune SuperAnimal weights
+SuperAnimalConversionTables:
