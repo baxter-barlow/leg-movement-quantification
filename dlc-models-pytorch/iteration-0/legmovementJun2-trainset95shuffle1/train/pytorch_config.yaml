@@ -24,9 +24,9 @@ data:
     normalize_images: true
 device: auto
 metadata:
-  project_path: /content/drive/MyDrive/legmovement-baxter-2025-06-02
+  project_path: /content/leg-movement-quantification
   pose_config_path: 
-    /content/drive/MyDrive/legmovement-baxter-2025-06-02/dlc-models-pytorch/iteration-0/legmovementJun2-trainset95shuffle1/train/pytorch_config.yaml
+    /content/leg-movement-quantificationdlc-models-pytorch/iteration-0/legmovementJun2-trainset95shuffle1/train/pytorch_config.yaml
   bodyparts:
   - toe
   - ankle
