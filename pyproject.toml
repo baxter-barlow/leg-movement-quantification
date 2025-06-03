@@ -1,0 +1,17 @@
+[build-system]
+requires      = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name        = "Leg-movement-quantification"
+version     = "0.1.0"
+description = "Analysis of mouse leg movement from video."
+readme      = "README.md"
+license     = {text = "MIT"}
+authors     = [{name = "Baxter Barlow", email = "barlow@mit.edu"}]
+requires-python = ">=3.9"
+
+dependencies = [
+  "numpy >=1.26",
+  "opencv-python >=4.10",
+]
