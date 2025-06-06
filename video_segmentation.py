@@ -6,6 +6,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterator, List, Tuple
 
+from sklearn.cluster import KMeans
 import cv2
 import numpy as np
 from scipy.signal import medfilt
@@ -79,8 +80,13 @@ def process_video(
     cap.release()
 
     percentages = np.array(cyan_pct, dtype=np.float32)
-    smooth      = medfilt(percentages, kernel_size=median_k)
-    stim_mask   = smooth > stim_threshold
+    smooth = medfilt(percentages, kernel_size=median_k)
+    arr_reshaped = smooth.reshape(-1, 1)
+    kmeans = KMeans(n_clusters=2, random_state=0).fit(arr_reshaped)
+    labels = kmeans.labels_
+    centers = kmeans.cluster_centers_
+    bigger_cluster_label = np.argmax(centers)
+    stim_mask = labels == bigger_cluster_label
 
     blocks = find_stim_blocks(stim_mask)
     logger.info("Detected %d stimulation blocks", len(blocks))
